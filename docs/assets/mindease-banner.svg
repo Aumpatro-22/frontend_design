@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">MindEase Banner</title>
+  <desc id="desc">A colorful banner showcasing MindEase product experience and feature cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="20" x2="1180" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F7DA4"/>
+      <stop offset="0.45" stop-color="#4058D6"/>
+      <stop offset="1" stop-color="#6A44CE"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#44D9AF"/>
+      <stop offset="1" stop-color="#52A9FF"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="1280" height="560" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="24" flood-color="#00144A" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="560" rx="36" fill="url(#bg)"/>
+  <circle cx="118" cy="120" r="180" fill="#7DE8C3" fill-opacity="0.2"/>
+  <circle cx="1088" cy="470" r="220" fill="#95B9FF" fill-opacity="0.24"/>
+  <circle cx="844" cy="104" r="160" fill="#FFD096" fill-opacity="0.18"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="64" y="72" width="680" height="416" rx="28" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.3"/>
+    <text x="106" y="148" fill="#F4FBFF" font-family="'Segoe UI', 'Trebuchet MS', Arial, sans-serif" font-size="28" font-weight="600">MindEase</text>
+    <text x="106" y="214" fill="#FFFFFF" font-family="'Segoe UI', 'Trebuchet MS', Arial, sans-serif" font-size="54" font-weight="800">Mental wellness,</text>
+    <text x="106" y="276" fill="#FFFFFF" font-family="'Segoe UI', 'Trebuchet MS', Arial, sans-serif" font-size="54" font-weight="800">guided by calm AI.</text>
+    <text x="106" y="332" fill="#E5F4FF" font-family="'Segoe UI', Arial, sans-serif" font-size="25" font-weight="500">Landing, onboarding, emotion-aware chat, and crisis escalation</text>
+    <text x="106" y="366" fill="#E5F4FF" font-family="'Segoe UI', Arial, sans-serif" font-size="25" font-weight="500">in one thoughtful support flow.</text>
+
+    <rect x="106" y="398" width="252" height="58" rx="29" fill="url(#cta)"/>
+    <text x="146" y="434" fill="#08395D" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="800">Start Free Session</text>
+  </g>
+
+  <g>
+    <rect x="788" y="110" width="430" height="102" rx="22" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-opacity="0.4"/>
+    <rect x="788" y="230" width="430" height="102" rx="22" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-opacity="0.4"/>
+    <rect x="788" y="350" width="430" height="102" rx="22" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-opacity="0.4"/>
+
+    <circle cx="842" cy="161" r="20" fill="#6BE9BD"/>
+    <circle cx="842" cy="281" r="20" fill="#7DB3FF"/>
+    <circle cx="842" cy="401" r="20" fill="#FFC07C"/>
+
+    <text x="878" y="154" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">Emotion-aware chat</text>
+    <text x="878" y="182" fill="#E9F4FF" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="500">Real-time mood signals with empathetic replies</text>
+
+    <text x="878" y="274" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">Private onboarding</text>
+    <text x="878" y="302" fill="#E9F4FF" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="500">Context cards that personalize support</text>
+
+    <text x="878" y="394" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">Crisis-safe escalation</text>
+    <text x="878" y="422" fill="#E9F4FF" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="500">Immediate hotline guidance when needed</text>
+  </g>
+</svg>

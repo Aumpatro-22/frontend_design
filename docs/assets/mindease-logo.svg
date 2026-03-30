@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">MindEase Logo</title>
+  <desc id="desc">MindEase wordmark with a colorful wellness-inspired symbol.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3FBFF"/>
+      <stop offset="1" stop-color="#FFF7EE"/>
+    </linearGradient>
+    <linearGradient id="orb" x1="22" y1="20" x2="218" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42D9B8"/>
+      <stop offset="0.5" stop-color="#4EA7FF"/>
+      <stop offset="1" stop-color="#6D73FF"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="120" y1="58" x2="120" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFD67B"/>
+      <stop offset="1" stop-color="#FF9F66"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="320" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4E7EC6" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect x="4" y="4" width="1192" height="312" rx="40" fill="url(#bg)"/>
+
+  <g transform="translate(42 34)" filter="url(#shadow)">
+    <circle cx="120" cy="126" r="98" fill="url(#orb)"/>
+    <ellipse cx="120" cy="88" rx="28" ry="54" fill="url(#petal)"/>
+    <ellipse cx="86" cy="108" rx="24" ry="46" fill="url(#petal)" transform="rotate(-32 86 108)"/>
+    <ellipse cx="154" cy="108" rx="24" ry="46" fill="url(#petal)" transform="rotate(32 154 108)"/>
+    <ellipse cx="96" cy="146" rx="20" ry="36" fill="url(#petal)" transform="rotate(-24 96 146)"/>
+    <ellipse cx="144" cy="146" rx="20" ry="36" fill="url(#petal)" transform="rotate(24 144 146)"/>
+    <circle cx="120" cy="128" r="16" fill="#FFFFFF" fill-opacity="0.88"/>
+    <circle cx="196" cy="52" r="10" fill="url(#spark)"/>
+    <circle cx="204" cy="76" r="5" fill="#FFFFFF" fill-opacity="0.85"/>
+  </g>
+
+  <g transform="translate(324 64)">
+    <text x="0" y="88" fill="#123356" font-family="'Segoe UI', 'Trebuchet MS', Arial, sans-serif" font-size="90" font-weight="800" letter-spacing="1.2">MindEase</text>
+    <text x="3" y="138" fill="#3A5E82" font-family="'Segoe UI', 'Trebuchet MS', Arial, sans-serif" font-size="33" font-weight="500">AI companion for calmer conversations and safer support</text>
+
+    <g transform="translate(0 172)">
+      <rect x="0" y="0" width="214" height="48" rx="24" fill="#E8F7EF"/>
+      <rect x="226" y="0" width="222" height="48" rx="24" fill="#E8F1FF"/>
+      <rect x="460" y="0" width="214" height="48" rx="24" fill="#FFF1E5"/>
+      <text x="28" y="32" fill="#1C7C56" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">Emotion-aware</text>
+      <text x="256" y="32" fill="#245AB8" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">Private by design</text>
+      <text x="496" y="32" fill="#A45423" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">Crisis-safe flow</text>
+    </g>
+  </g>
+</svg>

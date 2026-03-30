@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">MindEase User Journey</title>
+  <desc id="desc">Flow diagram from landing page to crisis support.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF8FF"/>
+      <stop offset="1" stop-color="#FFF6EC"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#75E6C2"/>
+      <stop offset="1" stop-color="#47B8FF"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#83BEFF"/>
+      <stop offset="1" stop-color="#6A7DFF"/>
+    </linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8ED4FF"/>
+      <stop offset="1" stop-color="#52A9FF"/>
+    </linearGradient>
+    <linearGradient id="cardD" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#80E1C9"/>
+      <stop offset="1" stop-color="#5BC9A8"/>
+    </linearGradient>
+    <linearGradient id="cardE" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFC88F"/>
+      <stop offset="1" stop-color="#FF9970"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M1 1L11 6L1 11V1Z" fill="#5A78A4"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+
+  <text x="80" y="66" fill="#1F3D5A" font-family="'Segoe UI', 'Trebuchet MS', Arial, sans-serif" font-size="34" font-weight="800">MindEase User Journey</text>
+  <text x="80" y="98" fill="#436282" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="500">From first visit to safe support in one continuous flow.</text>
+
+  <g>
+    <rect x="76" y="138" width="210" height="142" rx="20" fill="url(#cardA)"/>
+    <rect x="320" y="138" width="210" height="142" rx="20" fill="url(#cardB)"/>
+    <rect x="564" y="138" width="210" height="142" rx="20" fill="url(#cardC)"/>
+    <rect x="808" y="138" width="210" height="142" rx="20" fill="url(#cardD)"/>
+    <rect x="1052" y="138" width="164" height="142" rx="20" fill="url(#cardE)"/>
+
+    <text x="98" y="186" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="27" font-weight="800">1. Landing</text>
+    <text x="98" y="222" fill="#F0FDFF" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">Story, trust,</text>
+    <text x="98" y="246" fill="#F0FDFF" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">session CTA</text>
+
+    <text x="342" y="186" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="27" font-weight="800">2. Auth</text>
+    <text x="342" y="222" fill="#EDF3FF" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">Email or Google</text>
+    <text x="342" y="246" fill="#EDF3FF" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">via Supabase</text>
+
+    <text x="586" y="186" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="27" font-weight="800">3. Onboarding</text>
+    <text x="586" y="222" fill="#F1F8FF" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">Context cards for</text>
+    <text x="586" y="246" fill="#F1F8FF" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">personalized support</text>
+
+    <text x="830" y="186" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="27" font-weight="800">4. Chat</text>
+    <text x="830" y="222" fill="#E9FFF8" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">Saathi responses</text>
+    <text x="830" y="246" fill="#E9FFF8" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">plus mood indicator</text>
+
+    <text x="1074" y="186" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="25" font-weight="800">5. Safety</text>
+    <text x="1074" y="222" fill="#FFF8F1" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">Crisis words</text>
+    <text x="1074" y="246" fill="#FFF8F1" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500">trigger help</text>
+  </g>
+
+  <path d="M288 209H316" stroke="#5A78A4" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M532 209H560" stroke="#5A78A4" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M776 209H804" stroke="#5A78A4" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1020 209H1048" stroke="#5A78A4" stroke-width="4" marker-end="url(#arrow)"/>
+</svg>
