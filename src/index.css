@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background:         42 40% 97%;   /* #FAF8F5 Cream */
+    --foreground:         215 28% 17%;  /* #1E293B Slate 800 */
+    --card:               0 0% 100%;    /* White */
+    --card-foreground:    215 28% 17%;
+    --popover:            0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+    --primary:            43 100% 50%;   /* #FFC800 Sunny Yellow */
+    --primary-foreground: 215 28% 17%;
+    --secondary:            200 98% 39%; /* #0284C7 Sky Blue */
+    --secondary-foreground: 0 0% 100%;
+    --muted:            210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent:            16 100% 64%;   /* #FF8C42 Orange */
+    --accent-foreground: 0 0% 100%;
+    --destructive:            0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input:  214 32% 91%;
+    --ring:   43 100% 50%;
+    --radius: 1.5rem;
+
+    --font-heading: 'Nunito', sans-serif;
+    --font-sans:   'Nunito', sans-serif;
+
+    /* ── Joyful palette ── */
+    --joy-cream:    #FAF8F5;
+    --joy-yellow:   #FFC800;
+    --joy-orange:   #FF8C42;
+    --joy-sky:      #38BDF8;
+    --joy-mint:     #34D399;
+    --joy-text:     #1E293B;
+    --joy-text-muted: #475569;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--joy-cream);
+    color: var(--joy-text);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-slate-800;
+  }
+
+  ::selection {
+    background: var(--joy-yellow);
+    color: var(--joy-text);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--joy-sky);
+    outline-offset: 4px;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--joy-cream);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 10px;
+  }
+
+  /* ── Joyful utilities ── */
+  .joy-card {
+    background: #FFFFFF;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.06);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  }
+  .joy-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
+  }
+
+  /* ── Legacy compat ── */
+  .clay-panel  { @apply joy-card; }
+  .clay-card   { @apply joy-card;  }
+  .clay-button { @apply joy-card;  }
+  .clay-input  {
+    background: #FFFFFF;
+    border: 2px solid #E2E8F0;
+    border-radius: 9999px;
+    outline: none;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: var(--joy-text);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+  }
+  .clay-input:focus {
+    border-color: var(--joy-sky);
+    box-shadow: 0 0 0 4px rgba(56,189,248,0.2);
+  }
+  
+  .clean-card   { @apply joy-card;  }
+  .clean-panel  { @apply joy-card; }
+  .clean-button { @apply joy-card;  }
+  .clean-input  { @apply clay-input;  }
+  
+  .cta-primary {
+    background: var(--joy-yellow);
+    border: none;
+    border-radius: 9999px;
+    color: var(--joy-text);
+    font-weight: 800;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+    padding: 0.8rem 2rem;
+    box-shadow: 0 8px 20px -6px rgba(255,160,0,0.5);
+  }
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -6px rgba(255,160,0,0.6);
+  }
+  .cta-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px -4px rgba(255,160,0,0.5);
+  }
+}
+
+/* ── Keyframes (Joyful) ── */
+@keyframes float-joy {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-15px) rotate(2deg); }
+}
+.animate-float-joy {
+  animation: float-joy 6s ease-in-out infinite;
+}
+
+@keyframes cloud-drift {
+  0% { transform: translateX(-5%); }
+  50% { transform: translateX(5%); }
+  100% { transform: translateX(-5%); }
+}
+
+@keyframes blob-morph {
+  0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  34%      { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+  67%      { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+}
